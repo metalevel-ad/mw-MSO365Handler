@@ -1,0 +1,64 @@
+{
+    "name": "MSO365Handler",
+    "author": ["Spas Z. Spasov"],
+    "url": "https://github.com/pa4080/mw-MSO365Handler",
+    "version": "0.0.1 beta",
+    "license-name": "GPL-3.0+",
+    "type": "other",
+    "description": "For more information: https://github.com/pa4080/mw-MSO365Handler",
+    "descriptionmsg": "mso365handler_description",
+    "requires": {
+            "MediaWiki": ">= 1.30.0"
+    },
+    "MessagesDirs": {
+            "MSO365Handler": [
+                "i18n"
+            ]
+    },
+    "ResourceModules": {
+            "MSO365HandlerScriptsAndStyles": {
+                "scripts": "MSO365Handler.js",
+                "styles": "MSO365Handler.css"
+            },
+            "MSO365HandlerMMVRedirectScript": {
+                "scripts": "MSO365HandlerMMV.js"
+            }
+    },
+    "ResourceFileModulePaths": {
+        "localBasePath": "modules",
+        "remoteExtPath": "MSO365Handler"
+    },
+    "AutoloadClasses": {
+        "MSO365HandlerHooks": "MSO365Handler.hooks.php"
+    },
+    "Hooks": {
+        "ParserAfterTidy": "MSO365HandlerHooks::onParserAfterTidy",
+        "BeforePageDisplay": "MSO365HandlerHooks::onBeforePageDisplay",
+        "ResourceLoaderGetConfigVars": "MSO365HandlerHooks::onResourceLoaderGetConfigVars"
+    },
+    "FileExtensions": [
+        "pptx",
+        "pptm",
+        "docx",
+        "docm",
+        "xlsx",
+        "xlsm",
+        "ppsx"
+    ],
+    "config": {
+        "MSO365Handler": {
+            "allowedNameSpaces": {
+                "0": "6",
+                "1": "Only NS6, File: is needed."
+            },
+            "container": "<div class=\"mso365-search-index\">MSO365SearchIndex</div>",
+            "bash-processor": "MSO365Handler.processor.sh",
+            "width": "100%",
+            "height": "717px",
+            "style": "border-radius: 4px; border: 1px solid #aaa; margin: 8px auto 18px;",
+            "action": "view"
+        }
+    },
+    "manifest_version": 1
+}
+

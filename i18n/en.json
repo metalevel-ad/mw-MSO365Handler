@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"[https://www.mediawiki.org/wiki/User:Spas.Z.Spasov Spas Z. Spasov]"
+		]
+	},
+	"MSO365Handler": "Microsoft Office Online Files Auto Embed within the NS:File",
+	"mso365handler_description": "Media handler extension for Microsoft Office files, such as: docx, xlsx, pptx."
+}
