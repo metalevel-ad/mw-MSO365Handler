@@ -29,8 +29,8 @@ Clone the extension:
 
 ```bash
 cd $IP/extensions
-sudo git clone https://github.com/metalevel-ad/mw-MSO365Handler.git MSO365Handler # HTTPS
-sudo git clone git@github.com:metalevel-ad/mw-MSO365Handler.git MSO365Handler     # SSH
+sudo git clone https://github.com/metalevel-tech/mw-MSO365Handler.git MSO365Handler # HTTPS
+sudo git clone git@github.com:metalevel-tech/mw-MSO365Handler.git MSO365Handler     # SSH
 ```
 
 To install this extension, add the following to the end of the `LocalSettings.php` file:
@@ -55,7 +55,7 @@ $wgFileExtensions = array_merge($wgFileExtensions, [ 'pptx', 'docx', 'xlsx', 'tx
 Als
 See also
 ---
-* [Extension:MSO365Embed](https://github.com/metalevel-ad/mw-MSO365Embed)
+* [Extension:MSO365Embed](https://github.com/metalevel-tech/mw-MSO365Embed)
 
 References
 ---

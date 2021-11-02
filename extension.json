@@ -1,11 +1,11 @@
 {
     "name": "MSO365Handler",
     "author": ["Spas Z. Spasov"],
-    "url": "https://github.com/pa4080/mw-MSO365Handler",
+    "url": "https://github.com/metalevel-tech/mw-MSO365Handler",
     "version": "0.0.1 beta",
     "license-name": "GPL-3.0+",
     "type": "other",
-    "description": "For more information: https://github.com/pa4080/mw-MSO365Handler",
+    "description": "For more information: https://github.com/metalevel-tech/mw-MSO365Handler",
     "descriptionmsg": "mso365handler_description",
     "requires": {
             "MediaWiki": ">= 1.30.0"

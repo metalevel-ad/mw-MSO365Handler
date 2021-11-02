@@ -3,7 +3,7 @@
  * @author    Spas Z. Spasov <spas.z.spasov@gmail.com>
  * @copyright 2020 Spas Z. Spasov
  * @license   https://www.gnu.org/licenses/gpl-3.0.html GNU General Public License, version 3 (or later)
- * @home      https://github.com/pa4080/mw-MSO365Handler
+ * @home      https://github.com/metalevel-tech/mw-MSO365Handler
  *
  * This file is a part of the MediaWiki Extension:MSO365Handler
  *
