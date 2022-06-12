@@ -40,7 +40,8 @@ class MSO365HandlerHooks
             if (preg_match('~^([^\/]+\.(docx|xlsx|pptx|ppsx|txt|sh|xlsm))$~', $pageTitle, $re)) {
                 $filename = $re[1];  // re contains the groups; //echo $re[1]; //if (count($re) == 3) { $page = $re[2]; }
 
-                $fileObject = wfFindFile($pageTitle);
+                $fileObject = MediaWiki\MediaWikiServices::getInstance()->getRepoGroup()->findFile($filename);
+                
                 if ($fileObject) {
                     $filePath = $fileObject->getPath();
                     $fullFileName = str_replace("mwstore://local-backend/local-public", $wgUploadDirectory, $filePath);
