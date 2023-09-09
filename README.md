@@ -1,6 +1,6 @@
-mw-MSO365Handler
-===
-**The extension is tested with MW 1.38.**
+# MicroSoft Office 365 Files Handler 
+
+***[The extension is tested with MW 1.40](https://wiki.metalevel.tech/wiki/File:ProcessControl.pptx)***
 
 MediaWiki media handler extension for Microsoft Office files, such as "xlsx", "docx", "pptx", "xlsm", "pptm", "docm", "ppsx" files by using:
 * `https://view.officeapps.live.com/op/embed.aspx?src=...` or
@@ -22,9 +22,8 @@ cd $IP/extensions/MSO365Handler/assets/file-type-icons
 sudo -u ./link.sh
 ```
 
+## Installation
 
-Installation
----
 Clone the extension:
 
 ```bash
@@ -38,8 +37,7 @@ To install this extension, add the following to the end of the `LocalSettings.ph
 wfLoadExtension('MSO365Handler');
 ```
 
-Configuration
----
+## Configuration
 
 If the default configuration needs to be altered add these settings to the `LocalSettings.php` file below `wfLoadExtension('MSO365Handler')`:
 ```php
@@ -52,13 +50,13 @@ $wgFileExtensions = array_merge($wgFileExtensions, [ 'pptx', 'docx', 'xlsx', 'tx
 ```
 * For the default values see [extension.json](extension.json).
 
-Als
-See also
----
+
+## See also
+
 * [Extension:MSO365Embed](https://github.com/metalevel-tech/mw-MSO365Embed)
 
-References
----
+## References
+
 
 * https://www.mediawiki.org/wiki/Topic:Tbv4e1bjhv5hxkxt
 * https://www.mediawiki.org/wiki/Manual:Image_administration#Image_thumbnailing 

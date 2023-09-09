@@ -37,11 +37,11 @@ class MSO365HandlerHooks
         // Test whether the current NameSpace belongs to the Allowed NameSpaces
         if (in_array($currentNS, $wgMSO365Handler['allowedNameSpaces']) && strpos( $text, $wgMSO365Handler['container'] ) !== false ) {
 
-            if (preg_match('~^([^\/]+\.(docx|xlsx|pptx|ppsx|txt|sh|xlsm))$~', $pageTitle, $re)) {
-                $filename = $re[1];  // re contains the groups; //echo $re[1]; //if (count($re) == 3) { $page = $re[2]; }
+            if (preg_match('~^([^\/]+\.(docx|xlsx|pptx|ppsx|txt|sh|xlsm))$~', $pageTitle, $capturedArr)) {
+                $filename = $capturedArr[1];  // $capturedArr contains the groups; //echo $capturedArr[1]; //if (count($capturedArr) == 3) { $page = $capturedArr[2]; }
 
                 $fileObject = MediaWiki\MediaWikiServices::getInstance()->getRepoGroup()->findFile($filename);
-                
+
                 if ($fileObject) {
                     $filePath = $fileObject->getPath();
                     $fullFileName = str_replace("mwstore://local-backend/local-public", $wgUploadDirectory, $filePath);
@@ -79,7 +79,7 @@ class MSO365HandlerHooks
     /**
      * Exposrt some variables to the JS environment
      * Ref: https://www.mediawiki.org/wiki/Manual:Hooks/ResourceLoaderGetConfigVars
-     * 
+     *
      * Actually the JS embed the file,
      * above we just proccess its content and "push it to the search index"
      */
