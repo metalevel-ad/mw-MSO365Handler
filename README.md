@@ -1,12 +1,16 @@
-# MicroSoft Office 365 Files Handler 
+# MicroSoft Office 365 Files Handler
 
 ***[The extension is tested with MW 1.40](https://wiki.metalevel.tech/wiki/File:ProcessControl.pptx)***
+
+![Example 1.](.images/mw-MSO365Handler-01.webp)
+
+![Example 1.](.images/mw-MSO365Handler-02.webp)
 
 MediaWiki media handler extension for Microsoft Office files, such as "xlsx", "docx", "pptx", "xlsm", "pptm", "docm", "ppsx" files by using:
 * `https://view.officeapps.live.com/op/embed.aspx?src=...` or
 *  `https://view.officeapps.live.com/op/view.aspx?src=...`
 
-The extension will handle also "txt", "sh", "js", "css", "json" files, "html". All kind of these files will be embeded and displayed at their File:Pages via [JavaScript](modules/MSO365Handler.js). And the file's conten will be [extracted](MSO365Handler.processor.sh) and pushed as content of a hidden `<div>` element on the File:Page so the search engine will index this content. For this purpose you ned to place the following code at the bottom of your [Template:Information](https://www.mediawiki.org/wiki/Template:Information):
+The extension will handle also "txt", "sh", "js", "css", "json" files, "html". All kind of these files will be embeded and displayed at their File:Pages via [JavaScript](modules/MSO365Handler.js). And the file's content will be [extracted](MSO365Handler.processor.sh) and pushed as content of a hidden `<div>` element on the File:Page so the search engine will index this content. For this purpose you ned to place the following code at the bottom of your [Template:Information](https://www.mediawiki.org/wiki/Template:Information):
 
 ```html
 <div class="mso365-search-index">MSO365SearchIndex</div>
