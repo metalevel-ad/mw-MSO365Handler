@@ -4,7 +4,7 @@
 
 ![Example 1.](.images/mw-MSO365Handler-02.webp)
 
-* ***[The extension is tested with MW 1.40](https://wiki.metalevel.tech/wiki/File:ProcessControl.pptx)***
+* ***[The extension is tested with MW 1.40, MW 1.41](https://wiki.metalevel.tech/wiki/File:ProcessControl.pptx)***
 
 MediaWiki media handler extension for Microsoft Office files, such as "xlsx", "docx", "pptx", "xlsm", "pptm", "docm", "ppsx" files by using:
 
